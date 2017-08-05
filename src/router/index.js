@@ -4,6 +4,7 @@ import Main from '@/views/Main/Index'
 import Profile from '@/views/Profile/Index'
 import Profiles from '@/views/Profile/Dashboard'
 import ProfileNoomerzx from '@/views/Profile/Noomerzx/Index'
+import ProfileWhite from '@/views/Profile/White/Index'
 
 Vue.use(Router)
 
@@ -27,6 +28,11 @@ export default new Router({
           path: 'noomerzx',
           name: 'profile-noomerzx',
           component: ProfileNoomerzx
+        },
+        {
+          path: 'white',
+          name: 'profile-white',
+          component: ProfileWhite
         }
       ]
     }
