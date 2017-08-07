@@ -10,16 +10,16 @@
           </a>
         </div>
       </li>
-      <li class="hex">
+      <li class="hex" @click="goTo('profiles')">
         <div class="hexIn">
-          <a class="hexLink hex-bg-icon" href="#">
+          <a class="hexLink hex-bg-icon">
             <h2 class="menu menu-1">Team Member</h2>
           </a>
         </div>
       </li>
       <li class="hex">
         <div class="hexIn">
-          <a class="hexLink hex-bg-icon" href="#">
+          <a class="hexLink hex-bg-icon" href="http://www.sellsuki.co.th/">
             <h2 class="menu menu-2">Services</h2>
           </a>
         </div>
@@ -51,7 +51,7 @@
       </li>
       <li class="hex">
         <div class="hexIn">
-          <a class="hexLink hex-bg-icon" href="#">
+          <a class="hexLink hex-bg-icon" href="https://stories.sellsuki.co.th/">
             <h2 class="menu menu-3">Stories</h2>
           </a>
         </div>
@@ -62,11 +62,17 @@
 
 <script>
   export default {
-
+    methods: {
+      goTo (routeName) {
+        this.$router.push({ name: routeName })
+      }
+    }
   }
 </script>
 
 <style scoped>
+  @import '../../assets/css/hexagons.css';
+
   #hexGrid {
     max-width: 600px;
     transform: translate(-50%, -55%);
@@ -95,13 +101,11 @@
     padding: 50px;
   }
   .hex h1 {
-    background: black;
-    opacity: 0.7;
+    background:rgba(0, 0, 0, 0.8);
     color: white;
   }
   .hex p {
-    background: black;
-    opacity: 0.7;
+    background:rgba(0, 0, 0, 0.8);
     color: white;
   }
   .menu {
@@ -118,5 +122,11 @@
   }
   .menu-3 {
     margin-top: 50%;
+  }
+  .hex:hover {
+    cursor: pointer;
+  }
+  .hex-bg-icon:hover {
+    opacity: 0.9;
   }
 </style>

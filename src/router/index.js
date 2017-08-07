@@ -2,7 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import Main from '@/views/Main/Index'
 import Profile from '@/views/Profile/Index'
-import Profiles from '@/views/Profile/Dashboard'
+import Profiles from '@/views/Profile/Profiles'
 import ProfileNoomerzx from '@/views/Profile/Noomerzx/Index'
 import ProfileWhite from '@/views/Profile/White/Index'
 
@@ -35,6 +35,7 @@ export default new Router({
           component: ProfileWhite
         }
       ]
-    }
+    },
+    {path: '*', redirect: {name: 'main'}}
   ]
 })

@@ -63,8 +63,6 @@
 </script>
 
 <style>
-  @import './assets/css/hexagons.css';
-
   body {
     background: #15191e;
     /*background: white
@@ -78,10 +76,5 @@
     -moz-osx-font-smoothing: grayscale;
     text-align: center;
     color: #2c3e50;
-  }
-
-  #canvas {
-    width: 100%;
-    height: 100%;
   }
 </style>
