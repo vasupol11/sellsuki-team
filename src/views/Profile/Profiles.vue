@@ -78,7 +78,7 @@
             name: 'Wisarut Phuvanantanond',
             imgUrl: 'https://scontent.fbkk7-2.fna.fbcdn.net/v/t1.0-9/12718193_10153944645815907_5548914306735597574_n.jpg?oh=4242d03aba26cd19486e9f565e9b6208&oe=59F9E58C',
             position: 'Developer of Brazil',
-            profileUrl: 'profiler-noomerzx'
+            profileUrl: 'profile-noomerzx'
           },
           {
             name: 'Vittaya Krahan',
@@ -152,6 +152,7 @@
     methods: {
       goTo (profile) {
         if (profile) {
+          console.log(profile)
           this.$router.push({ name: profile })
         }
       }
