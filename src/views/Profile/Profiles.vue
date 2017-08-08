@@ -144,7 +144,7 @@
             name: 'Nic Jittaranan',
             imgUrl: 'https://scontent.fbkk7-2.fna.fbcdn.net/v/t1.0-9/11332_1206356816060576_7133234168861675503_n.jpg?oh=98036b35a157a04cc6a18b675880cf7d&oe=59FAD475',
             position: 'Nicka',
-            profileUrl: ''
+            profileUrl: 'profile-nic'
           }
         ]
       }
