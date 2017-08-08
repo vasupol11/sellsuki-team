@@ -1,12 +1,12 @@
 <template>
-  <div>
+  <div class="main-container">
     <ul id="hexGrid">
       <li class="hex">
         <div class="hexIn">
           <a class="hexLink hex-bg-menu" href="#">
             <img class="icon" src="http://simpleicon.com/wp-content/uploads/gear-2.svg" alt="" />
-            <h1>This is a title</h1>
-            <p>Some sample text about the article this hexagon leads to</p>
+            <h1>Passion</h1>
+            <p>We love what we do and we make what we we're.</p>
           </a>
         </div>
       </li>
@@ -35,8 +35,8 @@
         <div class="hexIn">
           <a class="hexLink hex-bg-menu" href="#">
             <img class="icon" src="https://cdn4.iconfinder.com/data/icons/scripting-and-programming-languages/512/js-512.png" alt="" />
-            <h1>This is a title</h1>
-            <p>Some sample text about the article this hexagon leads to</p>
+            <h1>Vision</h1>
+            <p>We see the same thing, We've shared the same goal.</p>
           </a>
         </div>
       </li>
@@ -44,8 +44,8 @@
         <div class="hexIn">
           <a class="hexLink hex-bg-menu" href="#">
             <img class="icon" src="https://cdn1.iconfinder.com/data/icons/seo-icons-5/96/Coding-512.png" alt="" />
-            <h1>This is a title</h1>
-            <p>Some sample text about the article this hexagon leads to</p>
+            <h1>Action</h1>
+            <p>Anyone can plan but we're the one who take an action.</p>
           </a>
         </div>
       </li>
@@ -57,6 +57,7 @@
         </div>
       </li>
     </ul>
+    <div class="clearfix"></div>
   </div>
 </template>
 
@@ -90,6 +91,9 @@ body {
   position: relative;
   visibility:hidden;
   outline:1px solid transparent; /* fix for jagged edges in FF on hover transition */
+}
+.hex:hover {
+  cursor: pointer;
 }
 .hex::after{
   content:'';
@@ -125,6 +129,10 @@ body {
             transform: skewY(-30deg) rotate3d(0,0,1,60deg);
 }
 
+.main-container {
+  height: 100vh;
+}
+
 /*** HEX CONTENT **********************************************************************/
 .hex img {
   left: -100%;
@@ -145,6 +153,8 @@ body {
   font-weight: 300;
   -webkit-transition:  -webkit-transform .2s ease-out, opacity .3s ease-out;
           transition:          transform .2s ease-out, opacity .3s ease-out;
+  color: white;
+  font-weight: bold;
 }
 .hex h1 {
   bottom: 50%;
