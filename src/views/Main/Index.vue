@@ -72,10 +72,6 @@
 
 <style scoped>
   /*@import '../../assets/css/hexagons.css';*/
-  * {
-    margin: 0;
-    padding: 0;
-}
 body {
     /*background: rgb(123, 158, 158);*/
 }

@@ -64,13 +64,13 @@
           },
           {
             name: 'Patarida Pinyopawasuth',
-            imgUrl: 'https://scontent.fbkk7-2.fna.fbcdn.net/v/t1.0-9/15542464_10158275921455354_8268265688331370889_n.jpg?oh=2ee75d01c51ae94c7d95e74df858d83e&oe=5A29A32D',
+            imgUrl: 'https://scontent.fbkk5-1.fna.fbcdn.net/v/t1.0-0/p240x240/181716_10150425954805354_6319555_n.jpg?oh=54478cd8e7877198ffc13e90db143892&oe=5A38CC8C',
             position: 'Mom of Barry',
             profileUrl: ''
           },
           {
             name: 'Nontachart Kangtong',
-            imgUrl: 'https://scontent.fbkk7-2.fna.fbcdn.net/v/t1.0-9/16195952_10208253698288343_2686879462051159450_n.jpg?oh=af6e5500520dc21746846dccb8a74382&oe=5A30B2EC',
+            imgUrl: 'https://scontent.fbkk5-1.fna.fbcdn.net/v/t1.0-9/18153_1208176052763_6680009_n.jpg?oh=9c13f48531eb593a29e2320ed7fbe9b7&oe=59EF09D4',
             position: 'Senior Backend',
             profileUrl: ''
           },
@@ -131,8 +131,8 @@
           {
             name: 'Sarin Amonratmongkol',
             imgUrl: 'https://scontent.fbkk7-2.fna.fbcdn.net/v/t1.0-9/165677_144139162306129_4192905_n.jpg?oh=23cd8173ad8dbcd38a0c7086d571571c&oe=59EECEE0',
-            position: 'Angular Master',
-            profileUrl: 'Design Master'
+            position: '"บอย"',
+            profileUrl: ''
           },
           {
             name: 'Pongsatorn Nitithammawoot',
@@ -161,6 +161,10 @@
 
 <style scoped>
   /*@import '../../assets/css/hexagons_original.css';*/
+li.hex:nth-child(12) .henIn .hexLink img {
+  box-shadow: 0px 0px 5px #fff;
+}
+
 #hexGrid {
   display: flex;
   flex-wrap: wrap;
