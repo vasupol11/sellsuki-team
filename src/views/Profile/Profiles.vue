@@ -114,7 +114,7 @@
             name: 'Wasin Jamroensap',
             imgUrl: 'https://scontent.fbkk7-2.fna.fbcdn.net/v/t1.0-9/983676_742967105747893_3057455589677211153_n.jpg?oh=81ea90657ac67ccf33d9860d285c8b7d&oe=5A360FDE',
             position: 'Girl Hunter',
-            profileUrl: ''
+            profileUrl: 'profile-white'
           },
           {
             name: 'Nattatorn Yucharoen',
@@ -180,6 +180,9 @@ li.hex:nth-child(12) .henIn .hexLink img {
   position: relative;
   visibility:hidden;
   outline:1px solid transparent; /* fix for jagged edges in FF on hover transition */
+}
+.hex:hover {
+  cursor: pointer;
 }
 .hex::after{
   content:'';
