@@ -176,9 +176,9 @@ li.hex:nth-child(12) .henIn .hexLink img {
   font-size: 15px;
   list-style-type: none;
 }
-li.hex{
+/*li.hex{
   z-index: -2;
-}
+}*/
 .hex {
   position: relative;
   visibility:hidden;
