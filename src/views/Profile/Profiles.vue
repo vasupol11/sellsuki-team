@@ -145,6 +145,12 @@
             imgUrl: 'https://scontent.fbkk7-2.fna.fbcdn.net/v/t1.0-9/11332_1206356816060576_7133234168861675503_n.jpg?oh=98036b35a157a04cc6a18b675880cf7d&oe=59FAD475',
             position: 'Nicka',
             profileUrl: 'profile-nic'
+          },
+          {
+            name: 'Tak Kamonpob',
+            imgUrl: 'https://scontent.fbkk16-1.fna.fbcdn.net/v/t1.0-9/10418431_10203020333896940_6505088533110123047_n.jpg?oh=62fb4035ed2215781452f9c8208bda30&oe=59FA5605',
+            position: 'Juke Master',
+            profileUrl: 'profile-tak'
           }
         ]
       }
