@@ -7,6 +7,7 @@ import ProfileNoomerzx from '@/views/Profile/Noomerzx/Index'
 import ProfileWhite from '@/views/Profile/White/Index'
 import ProfileNics from '@/views/Profile/NICs/Index'
 import ProfileTak from '@/views/Profile/Tak/Index'
+import ProfilePang from '@/views/Profile/Pang/Index'
 
 Vue.use(Router)
 
@@ -45,6 +46,11 @@ export default new Router({
           path: 'tak',
           name: 'profile-tak',
           component: ProfileTak
+        },
+        {
+          path: 'pang',
+          name: 'profile-pang',
+          component: ProfilePang
         }
       ]
     },

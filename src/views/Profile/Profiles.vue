@@ -60,7 +60,7 @@
             name: 'Pang Yutita',
             imgUrl: 'https://scontent.fbkk7-2.fna.fbcdn.net/v/t31.0-8/286596_2003423768658_3262293_o.jpg?oh=755da2aaf15098593323d7ded36e5440&oe=59F125E0',
             position: 'Mommy Developer',
-            profileUrl: ''
+            profileUrl: 'profile-pang'
           },
           {
             name: 'Patarida Pinyopawasuth',
