@@ -151,6 +151,12 @@
             imgUrl: 'https://scontent.fbkk16-1.fna.fbcdn.net/v/t1.0-9/10418431_10203020333896940_6505088533110123047_n.jpg?oh=62fb4035ed2215781452f9c8208bda30&oe=59FA5605',
             position: 'Juke Master',
             profileUrl: 'profile-tak'
+          },
+          {
+            name: 'Khawfang Lochaiyakul',
+            imgUrl: 'https://scontent.fbkk16-1.fna.fbcdn.net/v/t1.0-9/10520431_674966299236066_1350103612160674939_n.jpg?oh=f1e6febf06d83d20af963c79324ed493&oe=5A2CEFB1',
+            position: 'Otaku Developer',
+            profileUrl: 'profile-fang'
           }
         ]
       }
