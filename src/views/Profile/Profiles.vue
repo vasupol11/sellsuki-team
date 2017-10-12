@@ -136,9 +136,9 @@
           },
           {
             name: 'Pongsatorn Nitithammawoot',
-            imgUrl: 'https://scontent.fbkk7-2.fna.fbcdn.net/v/t1.0-9/21981_4353095621442_291085582_n.jpg?oh=5bf16980148c9cc35af46b577e6549e1&oe=5A335AAF',
-            position: 'The Dev',
-            profileUrl: ''
+            imgUrl: 'https://scontent.fbkk5-6.fna.fbcdn.net/v/t1.0-9/17309639_10208451684505530_5059023432523281177_n.jpg?oh=85b35fd93438f7c16b7a413ae16067f4&oe=5A7D7B85',
+            position: 'Dev kak kak',
+            profileUrl: 'profile-biig'
           },
           {
             name: 'Nic Jittaranan',
