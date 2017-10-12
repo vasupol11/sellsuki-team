@@ -50,6 +50,7 @@ export default new Router({
           name: 'profile-wan',
           component: ProfileWan
         },
+        {
           path: 'BiiG',
           name: 'profile-biig',
           component: ProfileBiiG
