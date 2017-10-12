@@ -157,6 +157,12 @@
             imgUrl: 'https://scontent.fbkk16-1.fna.fbcdn.net/v/t1.0-9/10520431_674966299236066_1350103612160674939_n.jpg?oh=f1e6febf06d83d20af963c79324ed493&oe=5A2CEFB1',
             position: 'Otaku Developer',
             profileUrl: 'profile-fang'
+          },
+          {
+            name: 'Runyasak Chaengnaimuang',
+            imgUrl: 'https://scontent.fbkk5-6.fna.fbcdn.net/v/t1.0-9/11071776_10203656417837808_6115215179175753786_n.jpg?oh=db8340d2321da559ade460b4b7312c34&oe=5A7FE1E2',
+            position: 'Awesome Developer',
+            profileUrl: 'profile-world'
           }
         ]
       }
