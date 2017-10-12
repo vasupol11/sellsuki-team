@@ -11,6 +11,7 @@ import ProfileBiiG from '@/views/Profile/BiiG/Index'
 import ProfileTak from '@/views/Profile/Tak/Index'
 import ProfileFang from '@/views/Profile/Fang/Index'
 import ProfilePang from '@/views/Profile/Pang/Index'
+import ProfileWorld from '@/views/Profile/World/Index'
 
 Vue.use(Router)
 
@@ -58,6 +59,11 @@ export default new Router({
           path: 'tak',
           name: 'profile-tak',
           component: ProfileTak
+        },
+        {
+          path: 'world',
+          name: 'profile-world',
+          component: ProfileWorld
         },
         {
           path: 'fang',

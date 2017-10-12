@@ -1,7 +1,7 @@
 Sellsuki Team Profile
 =============
 
-A Website that show all sellsuki Team Member.
+A website that shows all Sellsuki Team Member.
 
 ## Features
 * Landing Page
