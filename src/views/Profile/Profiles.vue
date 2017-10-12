@@ -100,9 +100,9 @@
           },
           {
             name: 'Wantip',
-            imgUrl: 'https://scontent.fbkk7-2.fna.fbcdn.net/v/t34.0-12/20645688_1887791241247480_868356342_n.jpg?oh=af8b9b6b9f886ba946c77b49546dd1a3&oe=598AD30C',
+            imgUrl: 'https://scontent.fbkk6-2.fna.fbcdn.net/v/t1.0-9/13139300_1377984682228141_3089524229520385496_n.jpg?oh=b3e91adeedcd667e24552cc7bd5aee0e&oe=5A34F219',
             position: 'Angular Master',
-            profileUrl: ''
+            profileUrl: 'profile-wan'
           },
           {
             name: 'Penkittika Sawangsilp',
