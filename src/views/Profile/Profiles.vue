@@ -145,6 +145,11 @@
             imgUrl: 'https://scontent.fbkk7-2.fna.fbcdn.net/v/t1.0-9/11332_1206356816060576_7133234168861675503_n.jpg?oh=98036b35a157a04cc6a18b675880cf7d&oe=59FAD475',
             position: 'Nicka',
             profileUrl: 'profile-nic'
+          }, {
+            name: 'Thanakorn Kitsawat',
+            imgUrl: 'https://scontent.fbkk5-6.fna.fbcdn.net/v/t1.0-0/p206x206/20108209_1767529906595864_4227876843798086895_n.jpg?oh=2fd1bded603023406e89a6896a116c49&oe=5A6D922E',
+            position: 'Cup E Developer',
+            profileUrl: ''
           },
           {
             name: 'Tak Kamonpob',
@@ -164,6 +169,7 @@
             position: 'Awesome Developer',
             profileUrl: 'profile-world'
           }
+
         ]
       }
     },
