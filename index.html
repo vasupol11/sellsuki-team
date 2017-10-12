@@ -2,6 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>sellsuki-team</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -9,22 +10,17 @@
     <style>
       html {
         position: relative;
-        height: 1005;
-      }
-      body {
-        background-color:#333;
-        /*margin: 0px/
-        padding: 0px;*/
+        height: 100%;
       }
       #snow{
         background: none;
         font-family: Androgyne;
         background-image: url('http://www.wearewebstars.dk/codepen/img/s1.png'), url('http://www.wearewebstars.dk/codepen/img//s2.png'), url('http://www.wearewebstars.dk/codepen/img//s3.png');
-        height: 100%;
-        left: 0;
-        position: absolute;
+        position: fixed;
         top: 0;
-        width: 100%;
+        right: 0;
+        bottom: 0;
+        left: 0;
         z-index:-1;
         -webkit-animation: snow 10s linear infinite;
         -moz-animation: snow 10s linear infinite;

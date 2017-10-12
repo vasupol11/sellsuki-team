@@ -57,10 +57,10 @@
             profileUrl: ''
           },
           {
-            name: 'Pang Tutita',
+            name: 'Pang Yutita',
             imgUrl: 'https://scontent.fbkk7-2.fna.fbcdn.net/v/t31.0-8/286596_2003423768658_3262293_o.jpg?oh=755da2aaf15098593323d7ded36e5440&oe=59F125E0',
             position: 'Mommy Developer',
-            profileUrl: ''
+            profileUrl: 'profile-pang'
           },
           {
             name: 'Patarida Pinyopawasuth',
@@ -100,9 +100,9 @@
           },
           {
             name: 'Wantip',
-            imgUrl: 'https://scontent.fbkk7-2.fna.fbcdn.net/v/t34.0-12/20645688_1887791241247480_868356342_n.jpg?oh=af8b9b6b9f886ba946c77b49546dd1a3&oe=598AD30C',
+            imgUrl: 'https://scontent.fbkk6-2.fna.fbcdn.net/v/t1.0-9/13139300_1377984682228141_3089524229520385496_n.jpg?oh=b3e91adeedcd667e24552cc7bd5aee0e&oe=5A34F219',
             position: 'Angular Master',
-            profileUrl: ''
+            profileUrl: 'profile-wan'
           },
           {
             name: 'Penkittika Sawangsilp',
@@ -136,9 +136,9 @@
           },
           {
             name: 'Pongsatorn Nitithammawoot',
-            imgUrl: 'https://scontent.fbkk7-2.fna.fbcdn.net/v/t1.0-9/21981_4353095621442_291085582_n.jpg?oh=5bf16980148c9cc35af46b577e6549e1&oe=5A335AAF',
-            position: 'The Dev',
-            profileUrl: ''
+            imgUrl: 'https://scontent.fbkk5-6.fna.fbcdn.net/v/t1.0-9/17309639_10208451684505530_5059023432523281177_n.jpg?oh=85b35fd93438f7c16b7a413ae16067f4&oe=5A7D7B85',
+            position: 'Dev kak kak',
+            profileUrl: 'profile-biig'
           },
           {
             name: 'Nic Jittaranan',
@@ -150,6 +150,18 @@
             imgUrl: 'https://scontent.fbkk5-6.fna.fbcdn.net/v/t1.0-0/p206x206/20108209_1767529906595864_4227876843798086895_n.jpg?oh=2fd1bded603023406e89a6896a116c49&oe=5A6D922E',
             position: 'Cup E Developer',
             profileUrl: ''
+          },
+          {
+            name: 'Tak Kamonpob',
+            imgUrl: 'https://scontent.fbkk16-1.fna.fbcdn.net/v/t1.0-9/10418431_10203020333896940_6505088533110123047_n.jpg?oh=62fb4035ed2215781452f9c8208bda30&oe=59FA5605',
+            position: 'Juke Master',
+            profileUrl: 'profile-tak'
+          },
+          {
+            name: 'Khawfang Lochaiyakul',
+            imgUrl: 'https://scontent.fbkk16-1.fna.fbcdn.net/v/t1.0-9/10520431_674966299236066_1350103612160674939_n.jpg?oh=f1e6febf06d83d20af963c79324ed493&oe=5A2CEFB1',
+            position: 'Otaku Developer',
+            profileUrl: 'profile-fang'
           }
 
         ]
@@ -182,9 +194,9 @@ li.hex:nth-child(12) .henIn .hexLink img {
   font-size: 15px;
   list-style-type: none;
 }
-li.hex{
+/*li.hex{
   z-index: -2;
-}
+}*/
 .hex {
   position: relative;
   visibility:hidden;

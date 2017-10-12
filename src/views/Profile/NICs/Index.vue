@@ -2,7 +2,7 @@
   <div>
     <ul id="hexGrid">
       <li class="hex">
-        <div class="hexIn">
+        <div v-bind:class="[{ 'anime1-out': flag_out[0] },'anime1']" class="hexIn">
           <a class="hexLink hex-bg-menu">
             <img class="icon" src="http://simpleicon.com/wp-content/uploads/gear-2.svg" alt="" />
             <!-- <h1>This is a title</h1>
@@ -11,28 +11,28 @@
         </div>
       </li>
       <li class="hex">
-        <div class="hexIn">
+        <div class="hexIn anime2">
           <a class="hexLink hex-bg-icon" href="#">
             <h2 class="menu menu-2">NICs Jittaranan</h2>
           </a>
         </div>
       </li>
       <li class="hex">
-        <div class="hexIn anime1">
+        <div class="hexIn anime3">
           <a class="hexLink hex-bg-icon" href="#">
             <h2 class="menu menu-2">NICs Jittaranan</h2>
           </a>
         </div>
       </li>
       <li class="hex">
-        <div class="hexIn">
+        <div class="hexIn anime4">
           <a class="hexLink hex-bg-logo" href="#">
             <img class="logo" src="https://scontent.fbkk7-2.fna.fbcdn.net/v/t1.0-9/14720574_1405665806129675_7756156885488512278_n.jpg?oh=6dbdb2cb376eef3b8bcc03fc3e1d61a6&oe=59FDC8EC" alt="" />
           </a>
         </div>
       </li>
       <li class="hex">
-        <div class="hexIn">
+        <div class="hexIn anime5">
           <a class="hexLink hex-bg-menu" href="#">
             <img class="icon" src="https://cdn4.iconfinder.com/data/icons/scripting-and-programming-languages/512/js-512.png" alt="" />
             <!-- <h1>This is a title</h1>
@@ -41,7 +41,7 @@
         </div>
       </li>
       <li class="hex">
-        <div class="hexIn">
+        <div class="hexIn anime6">
           <a class="hexLink hex-bg-menu" href="#">
             <img class="icon" src="https://cdn1.iconfinder.com/data/icons/seo-icons-5/96/Coding-512.png" alt="" />
             <!-- <h1>This is a title</h1>
@@ -50,7 +50,7 @@
         </div>
       </li>
       <li class="hex">
-        <div class="hexIn">
+        <div class="hexIn anime7">
           <a class="hexLink hex-bg-icon" href="#">
             <h2 class="menu menu-3">NICs Jittaranan</h2>
           </a>
@@ -62,7 +62,48 @@
 
 <script>
   export default {
-
+    data () {
+      return {
+        flag_out: [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ]
+      }
+    },
+    beforeDestroy: async function (d) {
+      console.log(d)
+      await this.setAllflag(true).then(() => {
+        console.log('3333333')
+      })
+    },
+    methods: {
+      setAllflag (flag) {
+        console.log('222')
+        this.$set(this.flag_out, 0, flag)
+        this.$set(this.flag_out, 1, flag)
+        this.$set(this.flag_out, 2, flag)
+        this.$set(this.flag_out, 3, flag)
+        this.$set(this.flag_out, 4, flag)
+        this.$set(this.flag_out, 5, flag)
+        this.$set(this.flag_out, 6, flag)
+        this.$set(this.flag_out, 7, flag)
+        this.$set(this.flag_out, 8, flag)
+        return this.delay(4000)
+      },
+      delay (time) {
+        return new Promise((resolve) => {
+          setTimeout(() => {
+            resolve()
+          }, time)
+        })
+      }
+    }
   }
 </script>
 
@@ -79,7 +120,6 @@ body {
   flex-wrap: wrap;
   width: 90%;
   margin: 0 auto;
-  overflow: hidden;
   font-family: 'Raleway', sans-serif;
   font-size: 15px;
   list-style-type: none;
@@ -242,6 +282,7 @@ body {
     position: absolute;
     left: 50%;
     top: 50%;
+    
   }
   .hexIn{
     position: absolute;
@@ -259,38 +300,387 @@ body {
     animation-name: example;
     animation-duration: 0.5s;
   }
-  anime1{
+  .anime1{
     -webkit-animation-name: anime1; /* Safari 4.0 - 8.0 */
-    -webkit-animation-duration: 0.5s; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
     animation-name: anime1;
     animation-duration: 4s;
   }
   @keyframes anime1{
-    from {
-      left:-100%; top:0px;
-      z-index: 999;
+    0%{
+      transform: rotate3d(0,0,1,2000deg) skewY(30deg);
+      left:-100%; top:-100%;
     }
-    to {
+    50%{
       left:0px; top:0px;
-      z-index: 999;
+    }
+    100%{
+      transform: rotate3d(0,0,1, -60deg) skewY(30deg);
     }
   }
   /* Safari 4.0 - 8.0 */
-  @-webkit-keyframes example {
-      from {-webkit-transform: rotate3d(0,0,1,360deg) skewY(30deg);
-      }
-      to {
-        -webkit-transform: rotate3d(0,0,1, -60deg) skewY(30deg);
-      }
+  @-webkit-keyframes anime1{
+    0%{
+      transform: rotate3d(0,0,1,2000deg) skewY(30deg);
+      left:-100%; top:-100%;
+    }
+    50%{
+      left:0px; top:0px;
+    }
+    100%{
+      transform: rotate3d(0,0,1, -60deg) skewY(30deg);
+    }
+  }
+  .anime2{
+    -webkit-animation-name: anime2; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+    animation-name: anime2;
+    animation-duration: 4s;
+  }
+  @keyframes anime2{
+    0%{
+      transform: rotate3d(0,0,1,2000deg) skewY(30deg);
+      right:-5%; top:-100%;
+    }
+    50%{
+      left:0px; top:0px;
+    }
+    100%{
+      transform: rotate3d(0,0,1, -60deg) skewY(30deg);
+    }
+  }
+  /* Safari 4.0 - 8.0 */
+  @-webkit-keyframes anime2{
+    0%{
+      transform: rotate3d(0,0,1,2000deg) skewY(30deg);
+      right:-100%; top:-100%;
+    }
+    50%{
+      right:0px; top:0px;
+    }
+    100%{
+      transform: rotate3d(0,0,1, -60deg) skewY(30deg);
+    }
+  }
+  .anime3{
+    -webkit-animation-name: anime3; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+    animation-name: anime3;
+    animation-duration: 4s;
+  }
+  @keyframes anime3{
+    0%{
+      transform: rotate3d(0,0,1,2000deg) skewY(30deg);
+      left:-100%; top:0px;
+      z-index: 999;
+    }
+    50%{
+      left:0px; top:0px;
+    }
+    100%{
+      transform: rotate3d(0,0,1, -60deg) skewY(30deg);
+       z-index: 0;
+    }
+  }
+  /* Safari 4.0 - 8.0 */
+  @-webkit-keyframes anime3{
+    0%{
+      transform: rotate3d(0,0,1,2000deg) skewY(30deg);
+      left:-100%; top:0px;
+    }
+    50%{
+      left:0px; top:0px;
+    }
+    100%{
+      transform: rotate3d(0,0,1, -60deg) skewY(30deg);
+    }
+  }
+  .anime5{
+    -webkit-animation-name: anime5; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+    animation-name: anime5;
+    animation-duration: 4s;
+  }
+  @keyframes anime5{
+    0%{
+      transform: rotate3d(0,0,1,2000deg) skewY(30deg);
+      right:-100%; top:0px;
+    }
+    50%{
+      right:0px; top:0px;
+    }
+    100%{
+      transform: rotate3d(0,0,1, -60deg) skewY(30deg);
+    }
+  }
+  /* Safari 4.0 - 8.0 */
+  @-webkit-keyframes anime5{
+    0%{
+      transform: rotate3d(0,0,1,2000deg) skewY(30deg);
+      right:-100%; top:0px;
+    }
+    50%{
+      right:0px; top:0px;
+    }
+    100%{
+      transform: rotate3d(0,0,1, -60deg) skewY(30deg);
+    }
+  }
+  .anime6{
+    -webkit-animation-name: anime6; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+    animation-name: anime6;
+    animation-duration: 4s;
+  }
+  @keyframes anime6{
+    0%{
+      transform: rotate3d(0,0,1,2000deg) skewY(30deg);
+      left:-100%; bottom:-100%;
+    }
+    50%{
+      left:0%; bottom:-28%;
+    }
+    100%{
+      transform: rotate3d(0,0,1, -60deg) skewY(30deg);
+    }
+  }
+  /* Safari 4.0 - 8.0 */
+  @-webkit-keyframes anime6{
+    0%{
+      transform: rotate3d(0,0,1,2000deg) skewY(30deg);
+      left:-100%; bottom:-100%;
+    }
+    50%{
+      left:0%; bottom:-28%;
+    }
+    100%{
+      transform: rotate3d(0,0,1, -60deg) skewY(30deg);
+    }
+  }
+  .anime7{
+    -webkit-animation-name: anime7; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+    animation-name: anime7;
+    animation-duration: 4s;
+  }
+  @keyframes anime7{
+    0%{
+      transform: rotate3d(0,0,1,2000deg) skewY(30deg);
+      right:-100%; bottom:-100%;
+    }
+    50%{
+      right:0px; bottom:-28%;
+    }
+    100%{
+      transform: rotate3d(0,0,1, -60deg) skewY(30deg);
+    }
+  }
+  /* Safari 4.0 - 8.0 */
+  @-webkit-keyframes anime7{
+    0%{
+      transform: rotate3d(0,0,1,2000deg) skewY(30deg);
+      right:-100%; bottom:-100%;
+    }
+    50%{
+      right:0px; bottom:-28%;
+    }
+    100%{
+      transform: rotate3d(0,0,1, -60deg) skewY(30deg);
+    }
   }
 
-  /* Standard syntax */
-  @keyframes example {
-      from {transform: rotate3d(0,0,1,360deg) skewY(30deg);
-      }
-      to {transform: rotate3d(0,0,1, -60deg) skewY(30deg);
-      }
+
+  .anime1-out{
+    -webkit-animation-name: anime1-out; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+    animation-name: anime1-out;
+    animation-duration: 4s;
+    animation-timing-function: ease;
   }
+  @keyframes anime1-out{
+    0%{
+      transform: rotate3d(0,0,1,2000deg) skewY(30deg);
+    }
+    10%{
+      left:0px; top:0px;
+    }
+    100%{
+      transform: rotate3d(0,0,1, -60deg) skewY(30deg);
+      left:-100%; top:-100%;
+    }
+  }
+  /* Safari 4.0 - 8.0 */
+  @-webkit-keyframes anime1-out{
+    0%{
+      transform: rotate3d(0,0,1,2000deg) skewY(30deg);
+    }
+    10%{
+      left:0px; top:0px;
+    }
+    100%{
+      transform: rotate3d(0,0,1, -60deg) skewY(30deg);
+      left:-100%; top:-100%;
+    }
+  }
+  .anime2-out{
+    -webkit-animation-name: anime2-out; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+    animation-name: anime2-out;
+    animation-duration: 4s;
+  }
+  @keyframes anime2-out{
+    0%{
+      transform: rotate3d(0,0,1,2000deg) skewY(30deg);
+    }
+    10%{
+      left:0px; top:0px;
+    }
+    100%{
+      transform: rotate3d(0,0,1, -60deg) skewY(30deg);
+      right:-5%; top:-100%;
+    }
+  }
+  /* Safari 4.0 - 8.0 */
+  @-webkit-keyframes anime2-out{
+    0%{
+      transform: rotate3d(0,0,1,2000deg) skewY(30deg);
+    }
+    10%{
+      left:0px; top:0px;
+    }
+    100%{
+      transform: rotate3d(0,0,1, -60deg) skewY(30deg);
+      right:-5%; top:-100%;
+    }
+  }
+  .anime3{
+    -webkit-animation-name: anime3; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+    animation-name: anime3;
+    animation-duration: 4s;
+  }
+  @keyframes anime3{
+    0%{
+      transform: rotate3d(0,0,1,2000deg) skewY(30deg);
+      left:-100%; top:0px;
+      z-index: 999;
+    }
+    50%{
+      left:0px; top:0px;
+    }
+    100%{
+      transform: rotate3d(0,0,1, -60deg) skewY(30deg);
+       z-index: 0;
+    }
+  }
+  /* Safari 4.0 - 8.0 */
+  @-webkit-keyframes anime3{
+    0%{
+      transform: rotate3d(0,0,1,2000deg) skewY(30deg);
+      left:-100%; top:0px;
+    }
+    50%{
+      left:0px; top:0px;
+    }
+    100%{
+      transform: rotate3d(0,0,1, -60deg) skewY(30deg);
+    }
+  }
+  .anime5{
+    -webkit-animation-name: anime5; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+    animation-name: anime5;
+    animation-duration: 4s;
+  }
+  @keyframes anime5{
+    0%{
+      transform: rotate3d(0,0,1,2000deg) skewY(30deg);
+      right:-100%; top:0px;
+    }
+    50%{
+      right:0px; top:0px;
+    }
+    100%{
+      transform: rotate3d(0,0,1, -60deg) skewY(30deg);
+    }
+  }
+  /* Safari 4.0 - 8.0 */
+  @-webkit-keyframes anime5{
+    0%{
+      transform: rotate3d(0,0,1,2000deg) skewY(30deg);
+      right:-100%; top:0px;
+    }
+    50%{
+      right:0px; top:0px;
+    }
+    100%{
+      transform: rotate3d(0,0,1, -60deg) skewY(30deg);
+    }
+  }
+  .anime6{
+    -webkit-animation-name: anime6; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+    animation-name: anime6;
+    animation-duration: 4s;
+  }
+  @keyframes anime6{
+    0%{
+      transform: rotate3d(0,0,1,2000deg) skewY(30deg);
+      left:-100%; bottom:-100%;
+    }
+    50%{
+      left:0%; bottom:-28%;
+    }
+    100%{
+      transform: rotate3d(0,0,1, -60deg) skewY(30deg);
+    }
+  }
+  /* Safari 4.0 - 8.0 */
+  @-webkit-keyframes anime6{
+    0%{
+      transform: rotate3d(0,0,1,2000deg) skewY(30deg);
+      left:-100%; bottom:-100%;
+    }
+    50%{
+      left:0%; bottom:-28%;
+    }
+    100%{
+      transform: rotate3d(0,0,1, -60deg) skewY(30deg);
+    }
+  }
+  .anime7{
+    -webkit-animation-name: anime7; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+    animation-name: anime7;
+    animation-duration: 4s;
+  }
+  @keyframes anime7{
+    0%{
+      transform: rotate3d(0,0,1,2000deg) skewY(30deg);
+      right:-100%; bottom:-100%;
+    }
+    50%{
+      right:0px; bottom:-28%;
+    }
+    100%{
+      transform: rotate3d(0,0,1, -60deg) skewY(30deg);
+    }
+  }
+  /* Safari 4.0 - 8.0 */
+  @-webkit-keyframes anime7{
+    0%{
+      transform: rotate3d(0,0,1,2000deg) skewY(30deg);
+      right:-100%; bottom:-100%;
+    }
+    50%{
+      right:0px; bottom:-28%;
+    }
+    100%{
+      transform: rotate3d(0,0,1, -60deg) skewY(30deg);
+    }
+  }
+
+
   .hexLink {
     border: 1px solid #2A323B;
   }

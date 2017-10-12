@@ -64,11 +64,15 @@
 
 <style>
   body {
-    background: #15191e;
+    /*background: #15191e;*/
     /*background: white
     background: #00CAF9
     background: #0ba9f0*/
-    margin: 0;
+    background: #15191e url('https://images4.alphacoders.com/232/thumb-1920-232854.jpg') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
   }
   #app {
     font-family: 'Avenir', Helvetica, Arial, sans-serif;

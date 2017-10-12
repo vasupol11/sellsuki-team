@@ -6,6 +6,11 @@ import Profiles from '@/views/Profile/Profiles'
 import ProfileNoomerzx from '@/views/Profile/Noomerzx/Index'
 import ProfileWhite from '@/views/Profile/White/Index'
 import ProfileNics from '@/views/Profile/NICs/Index'
+import ProfileWan from '@/views/Profile/Wan/Index'
+import ProfileBiiG from '@/views/Profile/BiiG/Index'
+import ProfileTak from '@/views/Profile/Tak/Index'
+import ProfileFang from '@/views/Profile/Fang/Index'
+import ProfilePang from '@/views/Profile/Pang/Index'
 
 Vue.use(Router)
 
@@ -39,6 +44,30 @@ export default new Router({
           path: 'NICs',
           name: 'profile-nic',
           component: ProfileNics
+        },
+        {
+          path: 'wan',
+          name: 'profile-wan',
+          component: ProfileWan
+        },
+          path: 'BiiG',
+          name: 'profile-biig',
+          component: ProfileBiiG
+        },
+        {
+          path: 'tak',
+          name: 'profile-tak',
+          component: ProfileTak
+        },
+        {
+          path: 'fang',
+          name: 'profile-fang',
+          component: ProfileFang
+        },
+        {
+          path: 'pang',
+          name: 'profile-pang',
+          component: ProfilePang
         }
       ]
     },
