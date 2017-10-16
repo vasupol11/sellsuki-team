@@ -68,7 +68,7 @@ export default {
 
 .btn {
   color: #fff;
-  border: 1px solid #fff;
+  border: 1.1px solid #fff;
   text-decoration: none;
 }
 </style>
